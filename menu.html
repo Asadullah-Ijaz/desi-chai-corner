@@ -1,0 +1,332 @@
+<!-- Asadullah Ijaz, i263242, E -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Desi Chai Corner ☕</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #fcf8f2;
+            color: #333333;
+            line-height: 1.6;
+        }
+
+        /* Header & Navigation */
+        header {
+            background-color: #6b3e2e;
+            color: #ffffff;
+            text-align: center;
+            padding: 35px 20px;
+        }
+
+        header h1 {
+            font-size: 2.3rem;
+            margin-bottom: 6px;
+            letter-spacing: 0.5px;
+        }
+
+        header p {
+            color: #f4ece1;
+            font-size: 1.05rem;
+            margin-bottom: 18px;
+        }
+
+        nav a {
+            display: inline-block;
+            color: #ffffff;
+            text-decoration: none;
+            background-color: rgba(255, 255, 255, 0.15);
+            padding: 8px 18px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin: 0 5px;
+            transition: background 0.3s ease;
+        }
+
+        nav a:hover, nav a.active {
+            background-color: #d97736;
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 850px;
+            margin: 30px auto;
+            padding: 25px;
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(107, 62, 46, 0.08);
+        }
+
+        /* Hero Banner Image */
+        .banner-section {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .banner-img {
+            width: 100%;
+            max-height: 260px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Menu Categories */
+        .menu-category {
+            margin-bottom: 35px;
+        }
+
+        .category-title {
+            color: #6b3e2e;
+            font-size: 1.5rem;
+            border-bottom: 2px solid #f4ece1;
+            padding-bottom: 8px;
+            margin-bottom: 18px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        /* Menu Grid */
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 16px;
+        }
+
+        .menu-card {
+            background-color: #fcf8f2;
+            border: 1px solid #efe4d6;
+            border-radius: 10px;
+            padding: 16px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .menu-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(107, 62, 46, 0.1);
+            background-color: #faf2e6;
+        }
+
+        .item-info h3 {
+            color: #4a2a1f;
+            font-size: 1.1rem;
+            margin-bottom: 4px;
+        }
+
+        .item-info p {
+            color: #666666;
+            font-size: 0.88rem;
+        }
+
+        .item-price {
+            background-color: #f4ece1;
+            color: #6b3e2e;
+            font-weight: 700;
+            padding: 6px 12px;
+            border-radius: 8px;
+            white-space: nowrap;
+            margin-left: 15px;
+            font-size: 0.95rem;
+        }
+
+        /* Order Action */
+        .action-section {
+            text-align: center;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #f4ece1;
+        }
+
+        button {
+            background-color: #d97736;
+            color: white;
+            border: none;
+            padding: 14px 32px;
+            font-size: 1.05rem;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #b85c1f;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+            color: #777777;
+        }
+
+        /* Mobile Adjustments */
+        @media (max-width: 600px) {
+            .container {
+                margin: 15px;
+                padding: 18px;
+            }
+            .menu-grid {
+                grid-template-columns: 1fr;
+            }
+            header h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Desi Chai Corner ☕</h1>
+        <p>Garam Chai aur Desi Nashta — Har Ghoot Mein Sukoon</p>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="menu.html" class="active">Full Menu</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="banner-section">
+            <img src="https://images.unsplash.com/photo-1576092768241-dec231879fc3?w=800" alt="Freshly Brewed Desi Chai" class="banner-img">
+        </div>
+
+        <!-- Section 1: Chai Varieties -->
+        <section class="menu-category">
+            <h2 class="category-title">☕ Special Chai & Brews</h2>
+            <div class="menu-grid">
+                <div class="menu-card">
+                    <div class="item-info">
+                        <h3>Special Karak Chai</h3>
+                        <p>Strong, slow-brewed tea with rich milk and bold aroma.</p>
+                    </div>
+                    <span class="item-price">100 PKR</span>
+                </div>
+
+                <div class="menu-card">
+                    <div class="item-info">
+                        <h3>Doodh Patti</h3>
+                        <p>Simmered purely in full-cream milk without a drop of water.</p>
+                    </div>
+                    <span class="item-price">120 PKR</span>
+                </div>
+
+                <div class="menu-card">
+                    <div class="item-info">
+                        <h3>Elaichi Chai</h3>
+                        <p>Fragrant chai infused with freshly crushed green cardamom pods.</p>
+                    </div>
+                    <span class="item-price">110 PKR</span>
+                </div>
+
+                <div class="menu-card">
+                    <div class="item-info">
+                        <h3>Gur Wali Chai</h3>
+                        <p>Sweetened with organic jaggery for a warm, earthy caramel flavor.</p>
+                    </div>
+                    <span class="item-price">130 PKR</span>
+                </div>
+
+                <div class="menu-card">
+                    <div class="item-info">
+                        <h3>Kashmiri Pink Chai</h3>
+                        <p>Velvety pink tea topped with crushed pistachios and almonds.</p>
+                    </div>
+                    <span class="item-price">160 PKR</span>
+                </div>
+
+                <div class="menu-card">
+                    <div class="item-info">
+                        <h3>Peshawari Kehwa</h3>
+                        <p>Light green tea brewed with cardamom, lemon, and honey.</p>
+                    </div>
+                    <span class="item-price">90 PKR</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Local Snacks -->
+        <section class="menu-category">
+            <h2 class="category-title">🥟 Desi Snacks & Parathas</h2>
+            <div class="menu-grid">
+                <div class="menu-card">
+                    <div class="item-info">
+                        <h3>Aloo Samosa (2 Pcs)</h3>
+                        <p>Crispy golden pastry filled with spiced potatoes, served with mint chutney.</p>
+                    </div>
+                    <span class="item-price">60 PKR</span>
+                </div>
+
+                <div class="menu-card">
+                    <div class="item-info">
+                        <h3>Anday Wala Bun Kabab</h3>
+                        <p>Street-style toasted bun with shami kabab, egg, onions, and imli sauce.</p>
+                    </div>
+                    <span class="item-price">180 PKR</span>
+                </div>
+
+                <div class="menu-card">
+                    <div class="item-info">
+                        <h3>Crispy Laccha Paratha</h3>
+                        <p>Flaky, multi-layered pan-fried flatbread brushed with desi ghee.</p>
+                    </div>
+                    <span class="item-price">90 PKR</span>
+                </div>
+
+                <div class="menu-card">
+                    <div class="item-info">
+                        <h3>Aloo Cheese Paratha</h3>
+                        <p>Stuffed with seasoned mashed potatoes and melted mozzarella.</p>
+                    </div>
+                    <span class="item-price">220 PKR</span>
+                </div>
+
+                <div class="menu-card">
+                    <div class="item-info">
+                        <h3>Chicken Cheese Shawarma</h3>
+                        <p>Grilled spiced chicken wrapped in pita with garlic mayo and pickles.</p>
+                    </div>
+                    <span class="item-price">200 PKR</span>
+                </div>
+
+                <div class="menu-card">
+                    <div class="item-info">
+                        <h3>Masala Fries</h3>
+                        <p>Crispy potato fries tossed in tangy chaat masala.</p>
+                    </div>
+                    <span class="item-price">130 PKR</span>
+                </div>
+            </div>
+        </section>
+
+        <div class="action-section">
+            <button onclick="placeOrder()">Place Quick Order</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Desi Chai Corner | University Web Lab Project</p>
+    </footer>
+
+    <script>
+        function placeOrder() {
+            console.log("Menu order button clicked");
+            window.alert("Shukriya! Aapka order kitchen mein bhej diya gaya hai.");
+        }
+    </script>
+
+</body>
+</html>
